@@ -1,0 +1,7 @@
+[Unit]
+Description=Btrbk Backup Service
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/btrbk run
